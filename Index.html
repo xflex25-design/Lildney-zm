@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relative vs Absolute Demo</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      color: #333;
+      line-height: 1.6;
+    }
+    .navbar{
+      position: fixed;
+    top:0;
+    right:0;
+    left: 0;
+      background-color: black;
+      display: flex;
+      justify-content: space-between;
+     align-items: center;
+      
+    }
+    ul{
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      list-style: none;
+      align-items: center;
+    
+    }
+    .ul li{
+      text-decoration: none;
+      list-style: none;
+      color: white;
+    }
+a{
+  color: white;
+  text-decoration: none;
+}
+.logo{
+  color: red;
+  font-palette: 60px;
+  font-synthesis-weight: 39px;
+}
+ .hero{
+   display:flex;
+ justify-content:center;
+  align-items: center;
+  height: 100vh;
+   
+ } 
+ button{
+   background-color:green;
+   color:white;
+   border-radius: 50px;
+   height:20px;
+ }
+ .links a{
+   height: 50px;
+ }
+ .links h1{
+   display: flex;
+   justify-content: center;
+ }
+  .links{
+    background-color:white;
+    line-height: 20px;
+    display:flex;
+    flex-direction: column;
+  }
+.links ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  height: 100vh;
+}
+a{
+  
+}
+footer{
+  display:grid;
+  grid-template-columns: 1fr 15fr 1fr;
+  grid-template-areas:"contact about quicklinks";
+  background-color: black;
+  height:400px;
+}
+.about{
+  grid-area: about;
+}
+.contact{
+  grid-area: contact;
+}
+.quicklinks{
+  grid-area:quicklinks;
+
+}
+about_footer{
+  color:white;
+}
+footer h2{
+  color:white;
+}
+footer p{
+  color:white;
+}
+.quicklinks ul a {
+  color: white;
+  text-decoration: none;
+}
+.quicklinks ul{
+  display:flex;
+  flex-flow: column;
+  list-style: none;
+}
+}
+  </style>
+</head>
+<body>
+  <img src="images/cbu.8jpg" alt="" width="50px">
+  <nav class="navbar">
+    <div class="logo">lidney</div>
+    <ul>
+       <li><a href="#">services</a></li>
+       <li><a href="#">home</a></li>
+       <li><a href="#">music</a></li>
+       <li><a href="#">about</a></li>
+    </ul>
+  </nav>
+  <hero class="hero">
+    <h1>lildney</h1>
+  </hero>
+<div id="about" class="about">
+    <h2>About Lildney</h2>
+    <p>Lildney is a talented Zambian R&B/Soul artist known for his soulful voice and authentic storytelling. Born and raised in Lusaka, Zambia, Lildney's music is heavily influenced by his African heritage and his passion for soulful melodies.</p>
+    <p>With a career spanning over 5 years, Lildney has established himself as one of Zambia's most promising young artists. His music has gained popularity not only in Zambia but also in other parts of Africa and beyond.</p>
+    <p>Lildney's music is a fusion of R&B, Soul, and Afrobeats, with lyrics that speak to love, heartbreak, and the struggles of everyday life. His soulful voice and captivating stage presence have earned him a loyal fan base and critical acclaim from music enthusiasts.
+    
+    <div class="links">
+      <h1>follow us on</h1>
+        <ul>
+       <li><a href="#"><i style="color:blue;"class="fa-brands fa-facebook"></i>facebook</a></li>
+       <li><a href="#"><i style="color:red;"class="fa-brands fa-youtube"></i>youtube</a></li>
+       <li><a href="#"><i style="color:black;"class="fa-brands fa-instagram"></i>instagram</a></li>
+.      <li><a href="#"><i style="color:black;" class="fa-brands fa-tiktok"></i> tiktok</a></li>
+    </ul>
+    </div>
+ <footer id=""contact"">
+   <div class="contact">
+     <h2>contact</h2>
+     
+        <h2>Get in Touch</h2>
+        <p>Email: <a href=""mailto:lildney@example.com"">lildney@example.com</a></p>
+        <li><a href="#"><i class="fa-solid fa-address-book"></i>+0260974119780</a>
+ 
+        <p>Phone: +260 97 1234567</p>
+        
+    
+  </div>
+  <div class="footer_about">
+           <h2>about</h2>
+    <p>Lildney is a Zambian R&B/Soul artist known for his soulful voice and authentic storytelling. With a career spanning over 5 years, he has established himself as one of Zambia's most promising young artists, with a fusion of R&B, Soul, and Afrobeats music that speaks to love, heartbreak, and everyday life. </p>
+    </div>
+    <div class="quicklinks">
+       <ul>
+       <li><a href="#">services</a></li>
+       <li><a href="#"><i class="fa-solid fa-house"></i>home</a></li>
+       <li><a href="#">about</a></li>
+    </ul>
+      
+    </div>
+    </footer>
+</body>
+</html
